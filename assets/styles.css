@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body {
+  background-image: url("./img/fondo.jpg");
+  background-repeat: repeat;
+}
+
+.container {
+  background: #fff;
+  max-width: 985px;
+  margin: 15px auto;
+  padding: 15px;
+}
+
+/* header */
+header h1 {
+  background: #cc0033;
+  color: #fff;
+  font-size: 2.25em;
+  text-align: center;
+  padding: 0.5em 0;
+  margin: 0;
+}
+header h2 {
+  background: #660000;
+  color: #fff;
+  font-size: 1.35em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  background: #cacbcd;
+  padding: 0.7em;
+  margin: 0 5px 0 0;
+}
+header nav ul li a {
+  color: #cc0033;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #660000;
+}
+header img {
+  border: 5px solid #cc0033;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+}
+
+/* main */
+/* intro */
+main .intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+main .intro article {
+  width: 48%;
+  border: 5px solid #cbcbcb;
+  padding: 15px;
+}
+main .intro article h3 {
+  background: #cc0033;
+  color: #fff;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0.3em;
+}
+main .intro article p strong {
+  color: #cc0033;
+}
+main .intro article ol li {
+  margin: 0 0 15px;
+}
+/* frutas */
+
+main .frutas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+main .frutas article {
+  width: 25%;
+  padding: 20px 15px;
+}
+main .frutas article img {
+  width: 100%;
+}
+main .frutas article .highlight {
+  background: #666666;
+  color: #fff;
+  padding: 15px;
+}
+main .frutas article:nth-of-type(even) {
+  background: #fe3265;
+}
+main .frutas article:nth-of-type(odd) {
+  background: #ffb8ca;
+}
+main .frutas article:nth-of-type(5) {
+  background: #ffdba6;
+}
+main .frutas article:nth-of-type(6) {
+  background: #fe9901;
+}
+
+/* footer */
+footer {
+  background: #660000;
+  color: #fff;
+  padding: 7px 0;
+}
+footer p {
+  text-align: center;
+  margin: 0;
+}
+footer p > a {
+  color: #fff;
+}
+footer p > a:hover {
+  color: #fe3265;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* header */
+  header nav ul {
+    flex-flow: column wrap;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li {
+    width: 100%;
+  }
+
+  /* main */
+  /* intro */
+  main .intro {
+    display: block;
+  }
+  main .intro article {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+
+  /* frutas */
+  main .frutas {
+    display: block;
+  }
+  main .frutas article {
+    width: 100%;
+  }
+}
